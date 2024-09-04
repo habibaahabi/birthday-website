@@ -188,3 +188,61 @@ p {
         transform: translateY(0);
     }
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Reduce heading size on smaller screens */
+    }
+
+    p {
+        font-size: 1.2em; /* Adjust paragraph font size */
+        margin: 10px 0; /* Reduce margin for better spacing */
+    }
+
+    .images-section {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images */
+    }
+
+    .image-card {
+        width: 90%; /* Make images fill most of the screen width */
+        margin-bottom: 20px; /* Add space between stacked images */
+    }
+
+    .image-card img {
+        width: 120px; /* Smaller image size for mobile */
+        height: 120px;
+    }
+
+    .gif {
+        width: 80%; /* Responsive width for GIF */
+        max-width: 300px; /* Maintain a max width */
+    }
+
+    .button {
+        font-size: 1.2em; /* Smaller font size for button text */
+        padding: 12px 24px; /* Adjust padding for the button */
+    }
+}
+
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Further reduce heading size */
+    }
+
+    p {
+        font-size: 1em; /* Further reduce paragraph size */
+    }
+
+    .image-card img {
+        width: 100px; /* Smaller images for very small screens */
+        height: 100px;
+    }
+
+    .button {
+        font-size: 1em; /* Smaller button font size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+}
